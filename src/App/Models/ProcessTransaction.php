@@ -107,9 +107,7 @@ class ProcessTransaction extends Controller
         curl_setopt($ch, CURLOPT_POSTFIELDS, $Data);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $response = curl_exec($ch);
-        $response = json_decode($response);
-
-        var_dump($response);
+        $response = json_decode($response);        
 
         $UpdateData = ['retorno_intermediador' => $response->Message, 'data_processamento' => date("Y-m-d H:i:s")];
         $TransactionData = ['data' => date("Y-m-d H:i:s"), 'id_situacao' => $response->Transaction_code];
