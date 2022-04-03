@@ -1,0 +1,19 @@
+.badge {
+    border-radius: 5px !important;    
+}
+
+.container-title {
+    display: flex; justify-content: center;
+}
+
+.confirm {
+    color: #006400;    
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.confirm:hover {
+    color: #008000;
+    transition: .4s ease-in-out;
+    font-weight: bold;
+}

@@ -1,0 +1,19 @@
+{
+    "name": "thiago/z1",
+    "description": "Z1's Web Environment",
+    "authors": [
+        {
+            "name": "ThiagoxxLive",
+            "email": "thiagoxx@live.com"
+        }
+    ],
+    
+    "autoload": {
+        "psr-4": {
+            "Core\\": "core",
+            "Src\\": "src",
+            "App\\": "src/App"
+        }
+    },    
+    "require": {}
+}
